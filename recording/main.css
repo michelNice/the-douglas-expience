@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+
+:root{
+    --btn-color:rebeccapurple;
+    --white-color:#fff;
+    --square-color-grey:#ccc;
+    --main-color:#FF5F1F;
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    /*background:linear-gradient(rgba(0, 0, 0, 0.308),rgba(0, 0, 0, 0.459)),url(recoding.jpg);*/
+    background-position: center;
+    background-size: cover;
+}
+
+h1{
+    color:var(--main-color);
+    padding:1rem 0;
+    font-size:1.5rem;
+    
+}
+
+.hero{
+    overflow:auto;
+    position: relative;
+}
+
+.hero::before{
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  top:0;
+  z-index: -1;
+
+  display: block;
+  background-image: url(recife.jpg);
+  background-size:cover;
+  width: 100%;
+  height: 100%;
+
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.conteiner{
+    width:450px;
+    height:450px;
+    background: var(--white-color);
+    display: flex;
+    align-items: center;
+    flex-direction:column ;
+    padding:0 1rem;
+    border-radius:6px;
+   
+}
+
+.btn{
+    border:0;
+    font-size:1.2rem;
+    cursor: pointer;
+    border-radius:200px;
+    margin:0rem 0;
+    height: 50px;
+    width:50px;
+    background:var(--main-color);
+    margin:0.9rem 1rem;
+    transition: all 0.8s ease-out;
+}
+
+
+
+.btn:hover{
+    background:#e1521a;
+}
+
+.btn i{
+    color:var(--white-color);
+}
+
+
+.square{
+    width:90%;
+    height:100%;
+    background:var(--square-color-grey);
+    padding:.7rem;
+    color: var(--white-color);
+    
+}

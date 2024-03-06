@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+
+:root{
+    --white-color:#fff;
+    --main-color:#FF5F1F;
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:14px;
+    height:100vh;
+    width: 100%;
+
+}
+
+.hero{
+    overflow:auto;
+    position: relative;
+}
+
+.hero::before{
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  top:0;
+  z-index: -1;
+
+  display: block;
+  background-image: url(recife.jpg);
+  background-size:cover;
+  width: 100%;
+  height: 100%;
+
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.conteiner{
+    width:600px;
+    background:var(--white-color);
+    height:300px;
+    padding:1rem;
+    border-radius:.9rem;
+   z-index: 1;
+}
+
+.conteiner h1{
+    font-size:2.1rem;
+    text-align:center;
+    color: var(--main-color);
+    
+}
+
+.conteiner .input-conteiner{
+    position:relative;
+    width:100%;
+    height:2rem;
+    margin:2rem 0;
+    
+}
+
+.conteiner .input-conteiner input{
+    width:100%;
+    height:100%;
+    border:1px solid var(--main-color);
+    outline:none;
+    font-size:1.1rem;
+    border-radius:2.5rem;
+    padding:1.5rem 2.8rem 1.5rem 1.5rem;
+    
+}
+
+.conteiner .input-conteiner i{
+    position: absolute;
+    top:50%;
+    right:20px;
+    color: var(--main-color);
+}
+
+.conteiner .button{
+    width:100%;
+    font-size:1.1rem;
+    font-weight: 600;
+    transition: all 0.8s ease-out;
+    border:0;
+    outline:none;
+    cursor: pointer;
+    height:45px;
+    border-radius:2.5rem;
+    background: var(--main-color);
+    color: var(--white-color);
+}
+
+
+.conteiner .button:hover{
+    background-color:#e1521a;
+    color:var(--white-color);
+}
+
+
+@media(max-width:700px){
+    .conteiner{
+        width:90%;    
+    }
+    
+}

@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+:root{
+    --white-color:#fff;
+    --main-color:#FF5F1F;
+}
+.row{
+    margin:0 auto;
+    max-width:1300px;
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+nav{
+    color:var(--white-color);
+}
+
+h2{
+    color: var(--main-color);
+    padding-top:2rem;
+    text-align: center;
+}
+
+
+
+a{
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.navbar{
+    background:var(--main-color);
+    padding:1.5rem 0;
+    height:5.5rem;
+}
+
+
+.conteiner{
+    display: flex;
+    align-items: center;
+}
+
+.icons{
+    width:100%;
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+}
+
+
+.center{
+    text-align: center;
+    padding-left:2.5rem;
+}
+
+
+
+
+ .btn-global{
+    border:0;
+    font-size:1.2rem;
+    cursor: pointer;
+    transition: all 0.8s ease-out;
+    background:transparent;
+}
+
+.btn-global i{
+    font-size:2rem;
+    margin:0 2rem;
+    color: var(--white-color);
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+
+i:hover{
+    color:#dbd3d3;
+}
+
+.arrow {
+    border: solid var(--white-color);
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 5px;
+  }
+
+
+  .updown {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+  .updown:hover {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+
+  .conteiner--employees{
+    margin: auto;
+    display: block;
+    padding:50px;
+  }
+
+
+  #employees {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #employees td, #employees th {
+    border: 1px solid #ddd;
+    padding:1.5rem;
+  }
+  #employees tr:nth-child(even){background:var(--white-color);}
+  #employees tr:nth-child(odd){background:#f5936c;}
+  
+ 
+  
+  #employees th {
+    text-align: left;
+    background-color:var(--main-color);
+    color: white;
+    padding: 2rem;
+  }
+
+
+
+
